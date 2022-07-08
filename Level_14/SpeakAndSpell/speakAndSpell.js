@@ -3,9 +3,9 @@ let inp;
 // value is the text the user entered in the input
 function onSubmit(value) {}
 
-// called everytime the user enters text in the input
+// called every time the user enters text in the input
 function onChange(value) {
-	letterSoundA.play(); // example plays letter A sound
+	letterSounds.A.play(); // example plays letter A sound
 }
 
 async function nextWord() {

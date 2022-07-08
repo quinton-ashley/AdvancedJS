@@ -1,4 +1,4 @@
-# Level 11 A
+# Level 14 A
 
 ## Creating Objects
 
@@ -96,10 +96,18 @@ Hello Ben
 The `loadSound` function loads a sound file from a given path. A path is the location of a file on your computer. `QuintOS.dir` is the location of the game's folder (aka directory).
 
 ```js
-let letterSoundA = loadSound(QuintOS.dir + '/sounds/letters/A.mp3');
+let greeting = loadSound(QuintOS.dir + '/sounds/hi.mp3');
 ```
 
-# Level 11 B
+## Playing sounds
+
+Play sound objects by using the play function
+
+```js
+greeting.play();
+```
+
+# Level 14 B
 
 ## Working with Inputs directly
 
@@ -140,6 +148,8 @@ function calculate(value) {
 inp = input('', 0, 0, calculate);
 ```
 
+# Level 14 C
+
 ## Callback Chaining
 
 If you try playing two sounds, one after the other like this it will not work!
@@ -160,7 +170,7 @@ sound0.onended(() => {
 
 Inside `onended` you can either put the name of a function to call or an anonymous function. In this example an anonymous function, a function that isn't given a name is used. Note that it uses the arrow `=>` syntax instead of the `function` keyword.
 
-# Level 11 C
+# Level 14 D
 
 If you have to use callbacks to play five sounds this is what it might look like. It's awful!
 
@@ -262,16 +272,18 @@ async function playAllLetters() {
 
 This level's computer is based on the classic children's toy from the 1980s, the electronic [Speak and Spell](<https://en.wikipedia.org/wiki/Speak_%26_Spell_(toy)>) made by Texas Instruments.
 
-- [Level 11 A](#level-11-a)
+- [Level 14 A](#level-14-a)
 	- [Creating Objects](#creating-objects)
 	- [for in loops](#for-in-loops)
 	- [for of loops](#for-of-loops)
 	- [Loading sounds](#loading-sounds)
-- [Level 11 B](#level-11-b)
+	- [Playing sounds](#playing-sounds)
+- [Level 14 B](#level-14-b)
 	- [Working with Inputs directly](#working-with-inputs-directly)
 	- [Example use of Inputs](#example-use-of-inputs)
+- [Level 14 C](#level-14-c)
 	- [Callback Chaining](#callback-chaining)
-- [Level 11 C](#level-11-c)
+- [Level 14 D](#level-14-d)
 	- [Promises](#promises)
 	- [Promisfied p5.js Sound](#promisfied-p5js-sound)
 	- [Computer History: Speak and Spell](#computer-history-speak-and-spell)

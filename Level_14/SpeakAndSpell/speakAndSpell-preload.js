@@ -34,10 +34,18 @@ let speech = [
 	'you_win'
 ];
 
-/* Part B0: Load all the speech sounds */
+let letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
 /* Part A0: Load all the letter sounds and apostrophe */
+let letterSounds = {};
 
 // example loading the letter A sound
-let letterSoundA = loadSound(QuintOS.dir + '/sounds/letters/A.mp3');
-letterSoundA.setVolume(0.3);
+letterSounds.A = loadSound(QuintOS.dir + '/sounds/letters/A.mp3');
+letterSound.A.setVolume(0.3);
+
+// are all the letter sounds loaded correctly? check the JS console!
+log(letterSounds);
+
+/* Part B0: Load all the word sounds */
+
+/* Part B0: Load all the speech sounds */
