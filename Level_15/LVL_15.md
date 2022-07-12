@@ -1,26 +1,8 @@
 # Level 09 A
 
-## Loading and Playing Sounds
+## Using sin and cosine waves in games
 
-Sounds must be loaded before a game begins. You will do this in a separate preload JS file in your game folder.
-
-Example code for playing a jump sound when the player jumps:
-
-```js
-// in preload file
-let jumpSound = loadSound('/sounds/jumpSound_92.mp3');
-```
-
-```js
-// in main game file
-void keyPressed() {
-	if (key == ' ') {
-		jumpSound.play();
-	}
-}
-```
-
-https://p5js.org/examples/sound-load-and-play-sound.html
+https://www.youtube.com/watch?v=7JcmpBUx4ag
 
 ## overlap
 
@@ -44,6 +26,10 @@ ball.collide(paddle, () => {
 ```
 
 # Level 09 B
+
+## Moving sprites at the same speed regardless of angle
+
+https://setosa.io/ev/sine-and-cosine/
 
 ## Check if a variable is defined
 
