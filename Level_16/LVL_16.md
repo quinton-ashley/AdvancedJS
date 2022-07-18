@@ -1,4 +1,4 @@
-# Level 12 A
+# Level 16 A
 
 ## Reading Documentation
 
@@ -16,7 +16,7 @@ Browse the docs to find out how to:
 - create a sprite with an image/animation
 - change a sprite's animation
 
-# Level 12 B
+# Level 16 B
 
 ## Reading Documentation
 
@@ -28,7 +28,7 @@ Use the QuintOS reference site to learn how to:
 - flip a sprite
 - rotate a sprite
 
-# Level 12 C
+# Level 16 C
 
 ## Reading Documentation
 
@@ -36,7 +36,7 @@ Reference the p5.play docs to learn how to:
 
 - create a Group
 
-# Level 12 D
+# Level 16 D
 
 ## Reading Documentation
 
@@ -55,12 +55,12 @@ movements.push(spriteGroup[1].move('up'));
 await Promise.all(movements);
 ```
 
-- [Level 12 A](#level-12-a)
+- [Level 16 A](#level-16-a)
 	- [Reading Documentation](#reading-documentation)
-- [Level 12 B](#level-12-b)
+- [Level 16 B](#level-16-b)
 	- [Reading Documentation](#reading-documentation-1)
-- [Level 12 C](#level-12-c)
+- [Level 16 C](#level-16-c)
 	- [Reading Documentation](#reading-documentation-2)
-- [Level 12 D](#level-12-d)
+- [Level 16 D](#level-16-d)
 	- [Reading Documentation](#reading-documentation-3)
 	- [Promise.all](#promiseall)

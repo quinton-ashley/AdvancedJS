@@ -1,4 +1,4 @@
-# Level 15 A
+# Level 18 A
 
 Start thinking of an idea for your own game or interactive art which I will help you create in Level 16!
 
@@ -20,7 +20,7 @@ To better manipulate data, simple find and replace using Strings often won't cut
 
 https://regex101.com/
 
-# Level 15 B
+# Level 18 B
 
 ## fetching JSON files
 
@@ -32,8 +32,8 @@ let data = await (await fetch('data.json')).json();
 
 Note that the parenthesis around await fetch are necessary to indicate that the fetch function should be done first.
 
-- [Level 15 A](#level-15-a)
+- [Level 18 A](#level-18-a)
 	- [JSON](#json)
 	- [Regular Expressions (RegEx)](#regular-expressions-regex)
-- [Level 15 B](#level-15-b)
+- [Level 18 B](#level-18-b)
 	- [fetching JSON files](#fetching-json-files)

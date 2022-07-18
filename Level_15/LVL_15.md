@@ -1,8 +1,4 @@
-# Level 09 A
-
-## Using sin and cosine waves in games
-
-https://www.youtube.com/watch?v=7JcmpBUx4ag
+# Level 15 A
 
 ## overlap
 
@@ -25,7 +21,7 @@ ball.collide(paddle, () => {
 });
 ```
 
-# Level 09 B
+# Level 15 B
 
 ## Moving sprites at the same speed regardless of angle
 

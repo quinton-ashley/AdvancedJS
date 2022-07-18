@@ -1,10 +1,10 @@
-# Level 08 A
+# Level 12 A
 
 ## Coding Philosophy: Debugging
 
 If you have problems with your code try using the `console.log` function (with QuintOS you can use `log` as a shortcut). Log the value of variables so you can see in the JavaScript console how your code is actually working.
 
-# Level 08 B
+# Level 12 B
 
 ## eraseRect
 
@@ -34,7 +34,7 @@ Use `for` loops to make lots of boxes!
 └─┘└─┘└─┘└─┘└─┘
 ```
 
-# Level 08 C
+# Level 12 C
 
 ## delay
 
@@ -78,7 +78,7 @@ This function returns a subsection of the string, starting at the start index an
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
 
-# Level 08 D
+# Level 12 D
 
 ## Add/Remove from any index in an Array
 

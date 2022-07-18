@@ -1,4 +1,4 @@
-# Level 16 A
+# Level 19 A
 
 ## Node.js and npm
 
@@ -12,7 +12,7 @@ Up until this point you've been remaking famous games to understand them on a de
 
 Your game doesn't need to be super complex or have a lot of artwork or a massive story, but it does need to be unique and fun!
 
-# Level 16 B
+# Level 19 B
 
 There remains only a few more notable bits of Javascript syntax you should learn about this point.
 
@@ -204,9 +204,9 @@ Let's take a look at how variables are stored in Javascript.
 
 https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0
 
-# End of IntroToJS
+# End of GameDesignJS
 
-Congratulations you've completed my IntroToJS course! You now have a good understanding of JavaScript now and programming in general.
+Congratulations you've completed my GameDesignJS course! You now have a good understanding of JavaScript now and programming in general.
 
 ## Google's zx
 
@@ -232,14 +232,14 @@ With ReactJS you can create mobile apps using HTML+CSS+JS.
 [Video: Explanation of what .exe files are and how computer processors execute assembly](https://www.youtube.com/watch?v=hhgxsrAFyz8)  
 [Video: AI Sudoku solver in python](https://www.youtube.com/watch?v=G_UYXzGuqvM)
 
-- [Level 16 A](#level-16-a)
+- [Level 19 A](#level-19-a)
 	- [Node.js and npm](#nodejs-and-npm)
 	- [Creating your own QuintOS project!](#creating-your-own-quintos-project)
-- [Level 16 B](#level-16-b)
+- [Level 19 B](#level-19-b)
 	- [Switch statements](#switch-statements)
 	- [Getters](#getters)
 	- [Javascript's memory](#javascripts-memory)
-- [End of IntroToJS](#end-of-introtojs)
+- [End of GameDesignJS](#end-of-gamedesignjs)
 	- [Google's zx](#googles-zx)
 	- [Electron](#electron)
 	- [ReactJS](#reactjs)
