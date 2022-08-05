@@ -1,14 +1,64 @@
-// screen size: 160x144 pixels
-// text rows: 18 cols: 20
+function preload() {
+	eatSound = loadSound(QuintOS.dir + '/sounds/retro_collect_pickup_item_20.wav');
+	eatSound.setVolume(0.3);
 
-let score = 0; // number of apples eaten
+	crashSound = loadSound(QuintOS.dir + '/sounds/retro_crash_damage_01.wav');
+	crashSound.setVolume(0.3);
 
-text('SCORE: ' + score, 17, 6);
+	moveSounds = [];
 
-let apple = world.createSprite('apple', 0, 0);
+	for (let i = 1; i < 10; i++) {
+		sound = loadSound(QuintOS.dir + '/sounds/Footstep1__00' + i + '.wav');
+		sound.setVolume(0.3);
+		moveSounds[i] = sound;
+	}
+
+	world = new World(0, 0, 8);
+	world.offset.y = 16;
+	world.spriteSheet = loadImage(QuintOS.dir + '/img/world.png');
+
+	pipes = new Group();
+	pipes.layer = 1;
+	pipes.addAnis({
+		'+': [0, 2],
+		'├': [1, 2],
+		'-': [2, 2],
+		'┤': [3, 2],
+		'┬': { pos: [1, 2], rotation: 90 },
+		'|': { pos: [2, 2], rotation: 90 },
+		'┴': { pos: [3, 2], rotation: 90 },
+		'┌': [4, 2],
+		'┐': [5, 2],
+		'└': [6, 2],
+		'┘': [7, 2]
+	});
+}
+
+function setup() {
+	/* Part A: create the grass field */
+
+	createTiles([
+		'┌├----------------┤┐',
+		'┬                  ┬',
+		'|                  |',
+		'|                  |',
+		'|                  |',
+		'|                  |',
+		'|                  |',
+		'|                  |',
+		'|                  |',
+		'|                  |',
+		'|                  |',
+		'|                  |',
+		'|                  |',
+		'┴                  ┴',
+		'└├----------------┤┘'
+	]);
+	selectMode();
+}
+
+function selectMode() {}
 
 function draw() {
-	background(colorPal(2));
-
-	drawSprites();
+	background(2);
 }

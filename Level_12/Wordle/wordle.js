@@ -2,13 +2,13 @@ let dictionary = [];
 let words = [];
 let board;
 
-async function loadGame() {
+async function setup() {
 	/* load the text files*/
 
 	startGame();
 }
 
-loadGame();
+setup();
 
 /* Display all the boxes for the letters */
 function displayBoxes() {}
