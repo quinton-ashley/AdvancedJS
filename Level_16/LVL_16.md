@@ -2,17 +2,17 @@
 
 ## Reading Documentation
 
-When you start making your own programming projects there won't be a lesson plan that you can follow. It is important that you learn how to find information in reference documentation on your own.
+When you start making your own programming projects there won't be a lesson plan that you can follow. An important part of learning to program is learning how to find the information you want in reference documentation on your own.
 
-Here is a link to the QuintOS reference documentation:
+Here's a link to the p5.play reference documentation:
 
-http://quintos.org/reference.html
+https://molleindustria.github.io/p5.play/v3_docs/classes/Sprite.html
 
 Browse the docs to find out how to:
 
-- create a Tiles object
-- save Sprite Sheets
-- add an image from a Sprite Sheet
+- specify the tile size of all sprites
+- load a sprite sheet image and assign it to a sprite or group
+- load sprite animations from a sprite sheet
 - create a sprite with an image/animation
 - change a sprite's animation
 
@@ -20,23 +20,14 @@ Browse the docs to find out how to:
 
 ## Reading Documentation
 
-Use the QuintOS reference site to learn how to:
+Use the p5.play reference site to learn how to:
 
-- load animations from a Sprite Sheet
 - move a sprite
 - teleport a sprite
 - flip a sprite
 - rotate a sprite
 
 # Level 16 C
-
-## Reading Documentation
-
-Reference the p5.play docs to learn how to:
-
-- create a Group
-
-# Level 16 D
 
 ## Reading Documentation
 
@@ -50,8 +41,8 @@ Sometimes you will need to `await` multiple Promises at once. For example, to wa
 
 ```js
 let movements = [];
-movements.push(spriteGroup[0].move('up'));
-movements.push(spriteGroup[1].move('up'));
+movements.push(group[0].move('up'));
+movements.push(group[1].move('up'));
 await Promise.all(movements);
 ```
 
@@ -61,6 +52,4 @@ await Promise.all(movements);
 	- [Reading Documentation](#reading-documentation-1)
 - [Level 16 C](#level-16-c)
 	- [Reading Documentation](#reading-documentation-2)
-- [Level 16 D](#level-16-d)
-	- [Reading Documentation](#reading-documentation-3)
 	- [Promise.all](#promiseall)

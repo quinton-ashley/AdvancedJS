@@ -13,9 +13,10 @@ function preload() {
 		moveSounds[i] = sound;
 	}
 
-	world = new World(0, 0, 8);
 	world.offset.y = 16;
-	world.spriteSheet = loadImage(QuintOS.dir + '/img/world.png');
+
+	allSprites.tileSize = 8;
+	allSprites.spriteSheet = loadImage(QuintOS.dir + '/img/world.png');
 
 	pipes = new Group();
 	pipes.layer = 1;
