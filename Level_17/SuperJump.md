@@ -5,9 +5,9 @@ https://www.youtube.com/watch?v=O-EuA_g1wWY
 
 ## Instructions
 
-Make your own version of the Papi Jump game from the video! Use the `Ball` and `Paddle` classes as well as the ball and horizontal paddle sprite art images from Contain. Horizontal paddles will be used for the platforms in this game. Rename the `Paddle` class to `Platform`. Use the mouse to steer the ball.
+Make your own version of the Papi Jump game from the video!
 
-Try thinking about how to remake this game on your own. Since this is a big challenge, break it down step by step. Start simple and build the game up from there. If you need help you can reference my step by step instructions below the dots.
+Try thinking about how to remake this game in p5.play on your own. Since this is a big challenge, break it down step by step. Start simple and build the game up from there. If you need help you can reference my step by step instructions below the dots.
 
 ## Extra Feature
 

@@ -1,7 +1,5 @@
 # Level 18 A
 
-Start thinking of an idea for your own game or interactive art which I will help you create in Level 16!
-
 ## JSON
 
 JSON stands for JavaScript Object Notation. JSON files are just a JS object in a file, but unlike in JS where quotes for the properties/keys are optional, for JSON they are required, in fact double quotes are required for all strings.

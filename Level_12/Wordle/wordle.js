@@ -7,8 +7,6 @@ async function setup() {
 	startGame();
 }
 
-setup();
-
 /* Display all the boxes for the letters */
 function displayBoxes() {}
 

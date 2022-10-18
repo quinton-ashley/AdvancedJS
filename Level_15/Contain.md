@@ -2,6 +2,8 @@
 
 Contain is a 1-4 player co-op variant of Pong, with the goal being to keep multiple balls within an area surrounded by paddles. Contain at least two balls or it's game over!
 
+Start thinking of an idea for your own game or interactive art program which I will help you create in Level 19!
+
 ## Instructions for Part A
 
 Copy and paste your code from Pong into the empty `contain.js` file.
