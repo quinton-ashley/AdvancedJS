@@ -1,32 +1,5 @@
 # Level 15 A
 
-## overlap
-
-You can disable collisions between sprites by using the overlap function.
-
-```js
-spriteA.overlap(spriteB);
-spriteA.overlap(spriteC);
-```
-
-spriteB will still collide with spriteC.
-
-## collide/overlap with callback
-
-You can add a callback function to `collide` and `overlap` that gets run when a sprite collides or overlaps with another sprite.
-
-```js
-ball.collide(paddle, () => {
-	log('ball bounced!');
-});
-```
-
-# Level 15 B
-
-## Moving sprites at the same speed regardless of angle
-
-https://setosa.io/ev/sine-and-cosine/
-
 ## Check if a variable is defined
 
 Sometimes you'll need to check if a variable is defined before you do something with it. If you put a variable that doesn't have a boolean value in a boolean condition by itself, Javascript will evaluate its "truthiness". You can check if a variable exists by putting it on it's own in a boolean condition.
@@ -59,6 +32,8 @@ Adding properties to an existing object is super easy, just give it a value as i
 ```js
 ball.active = true;
 ```
+
+# Level 15 B
 
 ## Skip iterations of a for loop
 

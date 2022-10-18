@@ -6,30 +6,42 @@ https://www.nytimes.com/games/wordle/index.html
 
 ## Instructions for Part A
 
-Split the list of common five letter words from the `words5.txt` file into an array of `words`. Take a look at the file, it has one word per line. HINT: Review your Hangman code. Remember the String `split` function.
+Split the list of common five letter words from the `words5.txt` file into the array of `commonWords`. Take a look at the file, it has one word per line. HINT: Review your CodeBreaker code for how to load files. Remember the String `split` function.
 
-Split the list of all five letter words from the `dictionary5.txt` file into an array, call it `dictionary`. Note this will be a bit more challenging since the file has multiple words per line. HINT: Remember you can use `arr.push(item)` to add to arrays.
+Split the list of all five letter words from the `dictionary5.txt` file into the array called `dictionary`. Note this will be a bit more challenging since the file has multiple words per line. HINT: Remember you can use the `push` function to add to arrays. Use the spread operator!
+
+Pick a random word from `commonWords`, call it `wordle`. HINT: Review your Hangman program.
 
 ## Instructions for Part B
 
-Pick a random word from `words`, call it `word`. HINT: Review your Hangman program.
-
 Each letter in each of the player's valid guesses will be displayed inside a box. The player only has 6 chances to guess the 5 letter word. All 30 empty boxes should be displayed in the beginning.
+
+For now try displaying each word the user guesses in the boxes, without checking for if the word is valid yet or if the letters match the wordle. Make a game loop to let the player make guesses. HINT: Review your Hangman program.
 
 When the player guesses a word, check if the word is five letters. If it is not five letters, alert the player.
 
 Also check if the player's guess can be found in the dictionary, if not, alert the player.
 
-If the player's guess is valid, show it on the board. Make a game loop to let the player guess again. Do not count invalid guesses as one of the player's six guesses.
+Only show the player's guess on the board if it's valid. Do not count invalid guesses as one of the player's six guesses.
+
+Show the player whether the letters in their guess are in the correct position in the word. Also show the player whether the letters in their guess are found in the word. Use `textRect` border styles and use the `delay` function to acheive the dramatic reveal effect that the original game has.
 
 ## Instructions for Part C
 
-Show the player whether the letters in their guesses are in the correct position in the word.
+At the bottom of the screen display the alphabet. When the user makes a guess, remove the letters from the guess that aren't found in the wordle from the alphabet.
 
-Also show the player whether the letters in their guesses are found in the word.
+Let the player start a new game with a new Wordle.
 
-If you'd like the extra challenge, the actual rules are a bit more complicated. Here are some examples:
+## Instructions for Part D
 
-If the word is BEING and the player's guess is KNEEL, only the first E in kneel should be marked as appearing in the word, the second E should not be marked as appearing in the word. This indicates there is an E in the word but it is closer to the first E.
+Remove words the player already got as wordles from the `commonWords` array so they can't get the same word twice.
 
-If the word is BEING and the player's guess is SEVEN, the first E should be marked as appearing in the correct position in the word. The second E should not be marked. This shows that there is only one E and the user already found its position.
+## CHALLENGE SECTION
+
+Keep track of the player's score, how many times they've gotten the wordle on guess 1, 2, 3, 4, 5, or 6. Display it when the user starts a new game.
+
+Try implementing the actual rules of Wordle, which are more complex than the simplified rules you implemented earlier. Here are some examples:
+
+    If the word is BEING and the player's guess is KNEEL, only the first E in kneel should be marked as appearing in the word, the second E should not be marked as appearing in the word. This indicates there is an E in the word but it is closer to the first E.
+
+    If the word is BEING and the player's guess is SEVEN, the first E should be marked as appearing in the correct position in the word. The second E should not be marked. This shows that there is only one E and the user already found its position.

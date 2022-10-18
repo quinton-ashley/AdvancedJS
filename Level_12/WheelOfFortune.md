@@ -38,8 +38,6 @@ If the player guesses the phrase correctly their score should be increased by th
 
 If the player is too slow and all the letters in the phrase are shown, they should lose that round and their score should be decreased by 3 points.
 
-## Instructions for Part D
-
 When the game restarts and a new phrase is choosen, make sure not to use any phrase that the player has already guessed at.
 
 Even though your `addLetter` function works, it could be better. When there is one letter remaining in the phrase it might take a lot of loops to randomly pick that letter. This method of coding in which randomness must produce a desirable outcome is not efficient and with larger sets of data could actually cause the program to seem as if it temporarily crashed as it loops repeatedly. The phrases in this game are too small for this to happen in practice. Nevertheless you should modify your `addLetter` function to pick from an array of available space coordinates. When a letter is added, remove that letter's coordinate from the `avail` array. This way the program will only be able to randomly choose between available coordinates.

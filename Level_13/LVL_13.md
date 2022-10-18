@@ -1,4 +1,4 @@
-# Level 13 A
+# Level 13
 
 ## Coding Philosophy: How to approach complex problems
 

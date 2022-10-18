@@ -1,18 +1,18 @@
 # Level 12 A
 
-## Coding Philosophy: Debugging
+## spread syntax
 
-If you have problems with your code try using the `console.log` function (with QuintOS you can use `log` as a shortcut). Log the value of variables so you can see in the JavaScript console how your code is actually working.
-
-# Level 12 B
-
-## eraseRect
+The spread syntax in JS is represented by three periods `...`. It allows the values of an array to be used as arguments to a function.
 
 ```js
-await eraseRect(row, col, w, h);
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+
+arr1.push(...arr2);
+console.log(arr1); // -> [1, 2, 3, 4, 5, 6]
 ```
 
-Erases text within the specified rectangle.
+# Level 12 B
 
 ## textRect
 
@@ -34,7 +34,15 @@ Use `for` loops to make lots of boxes!
 └─┘└─┘└─┘└─┘└─┘
 ```
 
-# Level 12 C
+An optional fourth argument can be used to specify the style of the text rectangle. By default it is 'solid' but can be changed to 'dashed' or 'outline'.
+
+## eraseRect
+
+```js
+await eraseRect(row, col, w, h);
+```
+
+Erases text within the specified rectangle.
 
 ## delay
 
@@ -54,6 +62,8 @@ async function takeFive() {
 
 takeFive();
 ```
+
+# Level 12 C
 
 ## replace String
 
