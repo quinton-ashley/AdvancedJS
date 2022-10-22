@@ -1,5 +1,6 @@
 let dictionary = [];
 let commonWords = [];
+let wordle;
 
 async function setup() {
 	/* load the text files*/
@@ -27,4 +28,13 @@ function displayInfo() {
 	row += 3;
 	textRect(row, 20, 3, 3, 'dashed');
 	text('letter is in the correct position', row, 24, 14);
+}
+
+async function displayScore() {
+	await eraseRect(9, 19, 20, 11);
+	let str = score + '/' + total + ' correct\n\nGuess Distribution\n\n';
+	for (let i = 0; i < 6; i++) {
+		str += `Guess ${i + 1}: ${distribution[i]}\n`;
+	}
+	text(str, 9, 19);
 }

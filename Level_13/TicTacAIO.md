@@ -6,15 +6,17 @@ Artificial Intelligence Os!
 
 For TicTacAIO you'll just be adding onto your code from 'TicTacToe'. Copy and paste the code from `ticTacToe.js` into your `ticTacAIO.js` file.
 
-Make buttons for starting a two player game or one player game against your AI player. Remove these buttons from the screen when they start
+Make buttons for starting a two player game or one player game against your AI player. Re these buttons from the screen when the game starts using the `eraseRect`.
 
 Start by making the most simple AI player possible. It should pick the first available space.
 
-Make buttons for choosing between AI difficulty levels: easy, medium, or hard. These buttons should appear after the user clicks the "One Player Start" button.
+Next try making the Easy AI, that should pick between remaining available spaces on the Tic Tac Toe grid randomly. This AI plays the game at the level of a very young child that is just learning to play Tic Tac Toe.
 
-The medium level AI should pick between remaining available spaces on the Tic Tac Toe grid randomly.
+The Hard AI should always pick a winning move if available, blocks opponent's winning moves if they have any, and otherwise it should fallback to the Easy level AI code (picking a random available space). The Hard AI plays the game at the level of an average adult.
 
-The hard level AI should pick a winning move if available, blocks opponent's winning moves if they have any, and otherwise it should fallback to the medium AI level code (picking a random available space).
+The Medium AI should only make Hard level AI decisions 75% of the time and otherwise it should fallback to the Easy AI code. The Medium level AI plays the game at the level of an older child that sometimes can still make simple mistakes.
+
+Make buttons for choosing between AI difficulty levels: Easy, Medium, or Hard. These buttons should appear after the user clicks the "One Player Start" button.
 
 BUG FIX! Prevent human players from making moves while any alert windows are being displayed, that includes "game won", "draw", and "this space is taken" alerts.
 
@@ -22,10 +24,10 @@ BUG FIX! Prevent human players from making moves while any alert windows are bei
 
 TicTacToe is a solved game, meaning that if both players always play their best moves the game will end in a forced draw.
 
-Try implementing an Unbeatable AI player that uses strategies to win against unskilled players. Remember, the best offense is a good defense. Don't focus so much on making your Unbeatable AI a winner, just ensure they can never lose.
+Try implementing an Unbeatable AI player that uses defensive strategies. Remember, the best offense is a good defense! Don't focus on making your Unbeatable AI a winner, just ensure it can never lose.
 
-There are a few formations that skilled players can use to force a win in TicTacToe. These are formations of three marks, even if the opponent can block one instance of three in a row win they can't block the second. The Unbeatable AI must prevent their opponent from making these formations.
+There are a few three mark formations that skilled players use to force a win in TicTacToe: even if the opponent can block one instance of three in a row win they can't block the second. The Unbeatable AI must prevent their opponent from making these formations.
 
-Test out your Unbeatable AI with a 0 player mode. Make it play hundreds of games against your Hard AI. When they finish playing you should be able to view the score and the results of every match in the console.
+Try to win against your Hard AI player. Notice where the AI makes the mistake that let you win. Make rules for the Unbeatable AI to follow so it can avoid making the same mistakes.
 
-If the Hard AI is able to win a match against the Unbeatable AI, you'll know you need to add something to your Unbeatable AI code.
+Doing all the testing manually is slow, ineffiecent, and doesn't prove that the Unbeatable AI can't lose. Test out your Unbeatable AI with a 0 player mode. Make it play hundreds of games against your Hard AI. When they finish playing you should be able to view the score and the results of every match in the console. If the Hard AI is able to win a match against the Unbeatable AI, you'll know you need to add something to your Unbeatable AI code.
