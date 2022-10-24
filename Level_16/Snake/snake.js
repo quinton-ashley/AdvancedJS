@@ -33,12 +33,15 @@ function preload() {
 		'└': [6, 2],
 		'┘': [7, 2]
 	});
+
+	/* Part A: load the grass tiles */
 }
 
 function setup() {
-	/* Part A: create the grass field */
+	/* Part A: generate a grass field */
 
-	createTiles([
+	// creates a rectangle of pipes
+	new Tiles([
 		'┌├----------------┤┐',
 		'┬                  ┬',
 		'|                  |',
@@ -55,10 +58,7 @@ function setup() {
 		'┴                  ┴',
 		'└├----------------┤┘'
 	]);
-	selectMode();
 }
-
-function selectMode() {}
 
 function draw() {
 	background(2);

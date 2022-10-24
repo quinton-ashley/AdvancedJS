@@ -10,7 +10,7 @@ Copy and paste your code from Pong into the empty `contain.js` file.
 
 Remove the walls but keep the paddles on the left and right sides of the screen.
 
-You can move all paddles using the mouse position coordinates (`mouseX` and `mouseY`) or with keyboard controls.
+You can move all paddles using the mouse position coordinates (`mouse.x` and `mouse.y`) or with keyboard controls.
 
 Make multiple balls on the screen at once! Make an array called `balls`. The goal of this game is for players to contain at least two of the balls.
 
@@ -18,11 +18,11 @@ Since we don't want all the balls to be served at once, make a new function call
 
 Make a `for` loop in the p5.js `draw` function to loop through all of the balls and check for bounces with the paddles.
 
-Use the `collide` function with a callback to play a sound when the ball bounces off a paddle.
+Use the `collides` function with a callback to play a sound when the ball bounces off a paddle.
 
 ## Instructions for Part B
 
-Make a new property `active` on the ball object, a boolean to store whether the ball is actively on the screen or not. By default set this property to false. Set `active` to true when the ball is served.
+Make a new boolean property `isActive` on the ball object, a boolean to store whether the ball is actively on the screen or not. By default set this property to false. Set `isActive` to true when the ball is served.
 
 In the for loop for the balls in the p5.js `draw` function, skip the iteration of the loop using `continue` if the ball is inactive. The program doesn't need to check for collisions between the paddles and the balls that are offscreen.
 

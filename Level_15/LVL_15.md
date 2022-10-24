@@ -25,14 +25,6 @@ if (!robot) {
 }
 ```
 
-## Adding properties to an existing object
-
-Adding properties to an existing object is super easy, just give it a value as if the property already existed!
-
-```js
-ball.active = true;
-```
-
 # Level 15 B
 
 ## Skip iterations of a for loop

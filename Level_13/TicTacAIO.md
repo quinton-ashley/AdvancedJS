@@ -30,4 +30,6 @@ There are a few three mark formations that skilled players use to force a win in
 
 Try to win against your Hard AI player. Notice where the AI makes the mistake that let you win. Make rules for the Unbeatable AI to follow so it can avoid making the same mistakes.
 
-Doing all the testing manually is slow, ineffiecent, and doesn't prove that the Unbeatable AI can't lose. Test out your Unbeatable AI with a 0 player mode. Make it play hundreds of games against your Hard AI. When they finish playing you should be able to view the score and the results of every match in the console. If the Hard AI is able to win a match against the Unbeatable AI, you'll know you need to add something to your Unbeatable AI code.
+Doing all the testing manually is slow, ineffiecent, and doesn't prove that the Unbeatable AI can't lose. Test out your Unbeatable AI with a 0 player mode in which the Unbeatable AI and Hard AI can play against each other. If the Hard AI is able to win a match against the Unbeatable AI, you'll know you need to add something to your Unbeatable AI code. When they finish playing a game you should be able to view the score and the results of every match in the console.
+
+To truly test your unbeatable AI it should be able to win hundreds of games against your Hard AI without losing once.
