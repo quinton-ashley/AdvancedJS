@@ -1,3 +1,6 @@
+let words, longWords, speech, letters;
+let letterSounds, wordSounds, speechSounds;
+
 function preload() {
 	// words that are easier to spell
 	words =
@@ -41,7 +44,7 @@ function preload() {
 	letterSounds = {};
 
 	// example loading the letter A sound
-	letterSounds.A = loadSound(QuintOS.dir + '/sounds/letters/A.mp3');
+	letterSounds.A = loadSound('sounds/letters/A.mp3');
 	letterSound.A.setVolume(0.3);
 
 	// are all the letter sounds loaded correctly? check the JS console!
@@ -62,14 +65,14 @@ function onChange(value) {
 	letterSounds.A.play(); // example plays letter A sound
 }
 
-async function nextWord() {
-	await erase(); // erase the screen
+function nextWord() {
+	erase(); // erase the screen
 
 	// create the input for letters
 	inp = input('', 0, 0, onSubmit, onChange);
 }
 
 async function start() {
-	await alert('Press enter to start');
+	await alert('Hello!');
 	nextWord();
 }

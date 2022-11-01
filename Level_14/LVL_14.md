@@ -1,23 +1,5 @@
 # Level 14 A
 
-## Loading sounds
-
-The `loadSound` function loads a sound file from a given path. A path is the location of a file on your computer. `QuintOS.dir` is the location of the game's folder (aka directory).
-
-```js
-let greeting = loadSound(QuintOS.dir + '/sounds/hi.mp3');
-```
-
-## Playing sounds
-
-Play sound objects by using the play function
-
-```js
-greeting.play();
-```
-
-# Level 14 B
-
 ## Working with Inputs directly
 
 Up to this point whenever we worked with inputs we used `prompt()`, now we're going to be using inputs directly.
@@ -39,22 +21,24 @@ let inp = input(value, x, y, onSubmit, onChange);
 Here's the code for the Calculator that runs after you exit the GuessTheNumber game. Load the calculator and check it out.
 
 ```js
-let inp;
+function start() {
+	let inp;
 
-// value is the text the user entered in the input
-function calculate(value) {
-	// eval() is a global function that evaluates the String input value as
-	// JavaScript code, for example if value is "5+3", result will be the number 8
-	let result = eval(value); // evaluate what the user entered
+	// value is the text the user entered in the input
+	function calculate(value) {
+		// eval() is a global function that evaluates the String input value as
+		// JavaScript code, for example if value is "5+3", result will be the number 8
+		let result = eval(value); // evaluate what the user entered
 
-	inp.erase(); // erase the old input
+		inp.erase(); // erase the old input
 
-	// create new input with it's initial value set to result
-	inp = input(result, 0, 0, calculate);
+		// create new input with it's initial value set to result
+		inp = input(result, 0, 0, calculate);
+	}
+
+	// create the input
+	inp = input('', 0, 0, calculate);
 }
-
-// create the input
-inp = input('', 0, 0, calculate);
 ```
 
 # Level 14 C
@@ -182,9 +166,6 @@ async function playAllLetters() {
 This level's computer is based on the classic children's toy from the 1980s, the electronic [Speak and Spell](<https://en.wikipedia.org/wiki/Speak_%26_Spell_(toy)>) made by Texas Instruments.
 
 - [Level 14 A](#level-14-a)
-	- [Loading sounds](#loading-sounds)
-	- [Playing sounds](#playing-sounds)
-- [Level 14 B](#level-14-b)
 	- [Working with Inputs directly](#working-with-inputs-directly)
 	- [Example use of Inputs](#example-use-of-inputs)
 - [Level 14 C](#level-14-c)
