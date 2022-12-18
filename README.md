@@ -1,6 +1,6 @@
 # Advanced JavaScript
 
-Learn the fundamental principles of Game Design by recreating famous games using JavaScript, p5.play, and QuintOS! This course is for intermediate level JavaScript programmers. By the end of the course you will be able to make your own high quality 2D game.
+Learn advanced level JavaScript using p5.play and QuintOS!
 
 **Wordle** : the popular NYT word puzzle
 

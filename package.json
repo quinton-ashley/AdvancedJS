@@ -1,16 +1,16 @@
 {
 	"author": "quinton-ashley",
 	"bugs": {
-		"url": "https://github.com/quinton-ashley/GameDesignJava/issues"
+		"url": "https://github.com/quinton-ashley/AdvancedJS/issues"
 	},
-	"description": "Learn intermediate level game design in JavaScript using QuintOS!",
-	"homepage": "https://github.com/quinton-ashley/GameDesignJava#readme",
+	"description": "Learn advanced level JavaScript using QuintOS!",
+	"homepage": "https://github.com/quinton-ashley/AdvancedJS#readme",
 	"license": "GPL-3.0-only",
 	"main": "",
-	"name": "gamedesignjs",
+	"name": "advanced-js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/quinton-ashley/GameDesignJS.git"
+		"url": "git+https://github.com/quinton-ashley/AdvancedJS.git"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -19,5 +19,5 @@
 		"version": "git add -A",
 		"postversion": "git push"
 	},
-	"version": "1.0.16"
+	"version": "1.0.17"
 }
