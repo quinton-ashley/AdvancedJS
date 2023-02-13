@@ -7,7 +7,7 @@ https://www.youtube.com/watch?v=O-EuA_g1wWY
 
 Make your own version of the Papi Jump game! This game used the iPhone's accelerometer to move the player character via tilt controls. When porting this game to the PC you should probably use mouse controls instead. Also add this additional feature that wasn't in the original Papi Jump: if the player does a mouse click right when the ball bounces it should perform a super jump that gives it extra height! If the player's timing is perfect or near perfect they should get a slightly higher super jump. If the player clicks too early or too late they should get less height than a super jump. To make the game more difficult you could even make mistimed super jumps have less height than a normal bounce! Use different animations and sound effects to give the user feedback regarding their jump timing.
 
-Try thinking about how to remake this game in p5.play on your own. Use the iterative design approach!
+Try thinking about how to remake this game in p5play on your own. Use the iterative design approach!
 
 HINTS:
 

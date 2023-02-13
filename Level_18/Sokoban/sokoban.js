@@ -112,6 +112,6 @@ function draw() {
 	if (!player.isMoving) player.idle();
 
 	world.update();
-	// p5.play function for drawing all sprites
+	// p5play function for drawing all sprites
 	drawSprites();
 }

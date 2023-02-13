@@ -12,7 +12,7 @@ https://p5play.org/learn/tiles.html
 
 ## Reading Documentation
 
-Use the p5.play reference site to learn how to:
+Use the p5play reference site to learn how to:
 
 - use the `sprite.move` function
 - teleport a sprite by changing its `x` and `y` position
@@ -23,7 +23,7 @@ Use the p5.play reference site to learn how to:
 
 ## Reading Documentation
 
-Reference the p5.play docs to learn how to:
+Reference the p5play docs to learn how to:
 
 - remove a sprite
 
@@ -39,9 +39,9 @@ await Promise.all(movements);
 ```
 
 - [Level 16 A](#level-16-a)
-	- [Reading Documentation](#reading-documentation)
+  - [Reading Documentation](#reading-documentation)
 - [Level 16 B](#level-16-b)
-	- [Reading Documentation](#reading-documentation-1)
+  - [Reading Documentation](#reading-documentation-1)
 - [Level 16 C](#level-16-c)
-	- [Reading Documentation](#reading-documentation-2)
-	- [Promise.all](#promiseall)
+  - [Reading Documentation](#reading-documentation-2)
+  - [Promise.all](#promiseall)
