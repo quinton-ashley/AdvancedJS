@@ -14,7 +14,7 @@ You can move all paddles using the mouse position coordinates (`mouse.x` and `mo
 
 Make multiple balls on the screen at once! Make an array called `balls`. The goal of this game is for players to contain at least two of the balls.
 
-Since we don't want all the balls to be served at once, make a new function called `serve`. This function should serve the balls one by one with a delay. Before serving the first ball make a countdown ("3", "2", "1") using `text()`.
+Since we don't want all the balls to be served at once, make a new function called `serve`. This function should serve the balls one by one with a delay. Before serving the first ball make a countdown ("3", "2", "1") using `txt()`.
 
 Make a `for` loop in the p5.js `draw` function to loop through all of the balls and check for bounces with the paddles.
 
@@ -28,4 +28,4 @@ In the for loop for the balls in the p5.js `draw` function, skip the iteration o
 
 Make the total speed of each ball increase each time they bounce off a paddle.
 
-Use `text()` to display the player's score, it can be based on the number of bounces they've gotten on their paddles and/or the amount of time they contained at least two balls.
+Use `txt()` to display the player's score, it can be based on the number of bounces they've gotten on their paddles and/or the amount of time they contained at least two balls.

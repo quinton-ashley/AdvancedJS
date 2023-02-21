@@ -2,8 +2,8 @@ let phrases;
 
 async function loadGame() {
 	// the category of theses phrases is "Fun and Games"
-	let data = await fetch(QuintOS.dir + '/phrases.txt').text();
-	let phrasesList = await data.text();
+	let data = await fetch(QuintOS.dir + '/phrases.txt').txt();
+	let phrasesList = await data.txt();
 }
 
 loadGame();

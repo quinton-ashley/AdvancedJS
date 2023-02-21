@@ -19,8 +19,8 @@ console.log(arr1); // -> [1, 2, 3, 4, 5, 6]
 Make rectangles out of text characters using `textRect`.
 
 ```js
-textRect(5, 5, 3, 3); // make a 3x3 rect at row 5 column 5 (5,5)
-text('W', 6, 6); // make letter 'W' at row 6 column 6 (6,6)
+txtRect(5, 5, 3, 3); // make a 3x3 rect at row 5 column 5 (5,5)
+txt('W', 6, 6); // make letter 'W' at row 6 column 6 (6,6)
 ```
 
 Use `for` loops to make lots of boxes!

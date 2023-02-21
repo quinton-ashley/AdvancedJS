@@ -20,14 +20,14 @@ async function startGame() {
 
 function displayInfo() {
 	let row = 10;
-	textRect(row, 20, 3, 3, 'solid');
-	text('letter is not found in word', row, 24);
+	txtRect(row, 20, 3, 3, 'solid');
+	txt('letter is not found in word', row, 24);
 	row += 3;
-	textRect(row, 20, 3, 3, 'outline');
-	text('letter is in the word', row, 24);
+	txtRect(row, 20, 3, 3, 'outline');
+	txt('letter is in the word', row, 24);
 	row += 3;
-	textRect(row, 20, 3, 3, 'dashed');
-	text('letter is in the correct position', row, 24, 14);
+	txtRect(row, 20, 3, 3, 'dashed');
+	txt('letter is in the correct position', row, 24, 14);
 }
 
 async function displayScore() {
@@ -36,5 +36,5 @@ async function displayScore() {
 	for (let i = 0; i < 6; i++) {
 		str += `Guess ${i + 1}: ${distribution[i]}\n`;
 	}
-	text(str, 9, 19);
+	txt(str, 9, 19);
 }
