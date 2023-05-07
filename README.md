@@ -1,6 +1,6 @@
 # Advanced JavaScript
 
-Learn advanced level JavaScript using p5play and QuintOS!
+Learn advanced level JavaScript using QuintOS!
 
 **Wordle** : the popular NYT word puzzle
 
