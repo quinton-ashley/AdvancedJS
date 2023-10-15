@@ -87,19 +87,3 @@ str.slice(start, end);
 This function returns a subsection of the string, starting at the start index and ending and the end index. It does not change the original value of the string. The `end` index is optional. Indexes can be negative. Take a look at the examples in the `slice` MDN JS documentation:
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
-
-# Level 12 D
-
-## Add/Remove from any index in an Array
-
-The `push` function is used to add an item to the end of an array and `pop` is used to remove an item from the end.
-
-The [`splice` function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) is used to add/remove items from any index in an Array.
-
-```js
-let removedItems = arr.splice(start, deleteCount, item);
-```
-
-It's important to note that this function actually changes the array!
-
-This function returns the removed item(s).

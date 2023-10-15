@@ -2,7 +2,7 @@ let dictionary = [];
 let commonWords = [];
 let wordle;
 
-async function setup() {
+function setup() {
 	/* load the text files*/
 
 	startGame();

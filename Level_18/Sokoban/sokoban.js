@@ -1,7 +1,12 @@
 /**
  * @type Sprite
  */
-let player;
+let hero;
+
+/**
+ * @type Group
+ */
+let floors;
 
 /**
  * @type Group
@@ -11,7 +16,7 @@ let walls;
 /**
  * @type Group
  */
-let boxes;
+let chests;
 
 /**
  * @type Group
@@ -29,20 +34,22 @@ function preload() {
 	allSprites.spriteSheet = loadImage('/img/questKid/world.png');
 	allSprites.resetAnimationsOnChange = true;
 
-	walls = new Group();
+	/* HERO */
+	hero = new Sprite();
+	hero.layer = 1;
+	hero.spriteSheet = loadImage('/img/questKid/questKid.png');
 
-	boxes = new Group();
+	floors = new Group();
 
-	/* PART A: Choose a tile to represent the box goal positions on the floor */
+	chests = new Group();
+
 	goals = new Group();
 
-	/* PLAYER */
-
-	player = new Sprite();
-	player.layer = 1;
-	player.spriteSheet = loadImage('/img/questKid/questKid.png');
+	walls = new Group();
 }
 
 function setup() {}
 
-function draw() {}
+function draw() {
+	background(0);
+}
