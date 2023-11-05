@@ -2,7 +2,7 @@
 
 ## Reading Documentation
 
-When you start making your own programming projects there won't be a lesson plan that you can follow. An important part of learning to program is learning how to find the information you want in reference documentation on your own. This is a skill that you will use for the rest of your life as a programmer!
+When you start making your own programming projects there won't be a lesson plan that you can follow. An important part of learning to program is learning how to find the information you want in reference documentation on your own. This is a valuable skill that will help you throughout your programming career.
 
 https://p5play.org/learn/tiles.html
 

@@ -24,9 +24,9 @@ Also check if the player's guess can be found in the dictionary, if not, alert t
 
 Only show the player's guess on the board if it's valid. Do not count invalid guesses as one of the player's six guesses.
 
-Show the player whether the letters in their guess are in the correct position in the word. Also show the player whether the letters in their guess are found in the word. Use `textRect` border styles and use the `delay` function to acheive the dramatic reveal effect that the original game has.
-
 ## Instructions for Part C
+
+Show the player whether the letters in their guess are in the correct position in the word. Also show the player whether the letters in their guess are found in the word. Use `textRect` border styles and the `delay` function to achieve the dramatic reveal effect that the original game has.
 
 At the bottom of the screen display the alphabet. When the user makes a guess, remove the letters from the guess that aren't found in the wordle from the alphabet.
 

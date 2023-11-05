@@ -1,8 +1,6 @@
 # WheelOfFortune
 
-The TV show, "Wheel of Fortune", features many different mini-games that contestants play. You'll make one of the hangman inspired mini-games. In this mini-game blank boxes representing all the letters in a phrase are presented to the player. Letters are revealed to the player slowly, one by one, in their correct positions. The sooner the player presses the buzzer and correctly guesses the phrase, the more points they win!
-
-https://youtu.be/K1nF5iNubcY?t=153
+In the American TV game show, "Wheel of Fortune", there's a mini game in which players compete to guess a phrase. Players are shown blank boxes, representing all the letters in a phrase. Letters are revealed to the player slowly, one by one, in their correct position in the phrase. The first player to press the buzzer and guess the phrase correctly wins!
 
 ## Instructions for Part A
 
@@ -18,7 +16,7 @@ words -> ['Community', 'Chest']
 
 ## Instructions for Part B
 
-Make boxes using `textRect` around the blank spaces and letters just like in the Wheel of Fortune TV show. Use `for` loops to make all the boxes for the phrase! HINT: Review your TicTacToe progam.
+Make boxes using `textRect` around the blank spaces and letters just like in the Wheel of Fortune TV show. Use `for` loops to make all the boxes for the phrase! HINT: Review your TicTacToe program.
 
 ```txt
 ┌─┐┌─┐┌─┐┌─┐┌─┐
@@ -38,11 +36,13 @@ If the player guesses the phrase correctly their score should be increased by th
 
 If the player is too slow and all the letters in the phrase are shown, they should lose that round and their score should be decreased by 3 points.
 
-When the game restarts and a new phrase is choosen, make sure not to use any phrase that the player has already guessed at.
+When the game restarts and a new phrase is chosen, make sure not to use any phrase that the player has already guessed at.
 
-Even though your `addLetter` function works, it could be better. When there is one letter remaining in the phrase it might take a lot of loops to randomly pick that letter. This method of coding in which randomness must produce a desirable outcome is not efficient and with larger sets of data could actually cause the program to seem as if it temporarily crashed as it loops repeatedly. The phrases in this game are too small for this to happen in practice. Nevertheless you should modify your `addLetter` function to pick from an array of available space coordinates. When a letter is added, remove that letter's coordinate from the `avail` array. This way the program will only be able to randomly choose between available coordinates.
+## Instructions for Part D
 
-```js
-// phrase -> ['Community', 'Chest']
-// avail -> [[0,0], [0,1], [0,2], ... [1,2], [1,3], [1,4]]
-```
+Even though your `addLetter` function works, it could probably be better. When there is one letter remaining in the phrase, would your code require a lot of loops to randomly pick that letter? If so, note that this method of coding in which randomness must produce a desirable outcome is not efficient, and with larger sets of data could actually cause the program to seem as if it temporarily crashed as it loops repeatedly. The phrases in this game are too small for this to happen in practice. Nevertheless you should modify your `addLetter` function, there are a few ways to do this.
+
+One way would be to pick from an array of available space coordinates. When a letter is added, remove that letter's coordinate from the `avail` array. This way the program will only be able to randomly choose between available coordinates.
+
+phrase -> ['Community', 'Chest']
+avail -> [[0,0], [0,1], [0,2], ... [1,2], [1,3], [1,4]]

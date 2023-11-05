@@ -36,6 +36,8 @@ Use `for` loops to make lots of boxes!
 
 An optional fourth argument can be used to specify the style of the text rectangle. By default it is 'solid' but can be changed to 'dashed' or 'outline'.
 
+# Level 12 C
+
 ## eraseRect
 
 ```js
@@ -63,7 +65,7 @@ async function takeFive() {
 takeFive();
 ```
 
-# Level 12 C
+# Level 12 D
 
 ## replace String
 
