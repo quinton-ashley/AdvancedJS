@@ -1,12 +1,7 @@
 /**
  * @type Sprite
  */
-let hero;
-
-/**
- * @type Group
- */
-let floors;
+let player;
 
 /**
  * @type Group
@@ -16,7 +11,7 @@ let walls;
 /**
  * @type Group
  */
-let chests;
+let boxes;
 
 /**
  * @type Group
@@ -25,8 +20,8 @@ let goals;
 
 function preload() {
 	// translates the origin (0, 0)
-	world.offset.x = 104;
-	world.offset.y = 48;
+	world.origin.x = 104;
+	world.origin.y = 48;
 
 	allSprites.tileSize = 32;
 	allSprites.pixelPerfect = true;
@@ -34,22 +29,23 @@ function preload() {
 	allSprites.spriteSheet = loadImage('/img/questKid/world.png');
 	allSprites.resetAnimationsOnChange = true;
 
-	/* HERO */
-	hero = new Sprite();
-	hero.layer = 1;
-	hero.spriteSheet = loadImage('/img/questKid/questKid.png');
+	walls = new Group();
 
-	floors = new Group();
+	boxes = new Group();
 
-	chests = new Group();
-
+	/* PART A: Choose a tile to represent the box goal positions on the floor */
 	goals = new Group();
 
-	walls = new Group();
+	/* PLAYER */
+
+	player = new Sprite(0, 0);
+	player.layer = 1;
+	player.spriteSheet = loadImage('/img/questKid/questKid.png');
+	player.addAnis({
+		idle: { row: 0, frames: 1 }
+	});
 }
 
 function setup() {}
 
-function draw() {
-	background(0);
-}
+function draw() {}
