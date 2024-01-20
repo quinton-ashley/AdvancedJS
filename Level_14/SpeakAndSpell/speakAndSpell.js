@@ -38,14 +38,15 @@ function preload() {
 		'you_win'
 	];
 
-	letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+	letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ'".split('');
 
 	/* Part A0: Load all the letter sounds and apostrophe */
 	letterSounds = {};
 
 	// example loading the letter A sound
-	letterSounds.A = loadSound('sounds/letters/A.mp3');
-	letterSound.A.setVolume(0.3);
+	let letter = letters[0];
+	letterSounds[letter] = loadSound('sounds/letters/A.mp3');
+	letterSounds[letter].setVolume(0.3);
 
 	// are all the letter sounds loaded correctly? check the JS console!
 	log(letterSounds);
@@ -62,6 +63,8 @@ function onSubmit(value) {}
 
 // called every time the user enters text in the input
 function onChange(value) {
+	// play the sound of the last letter the user entered
+
 	letterSounds.A.play(); // example plays letter A sound
 }
 
@@ -73,6 +76,6 @@ function nextWord() {
 }
 
 async function start() {
-	await alert('Hello!');
+	await alert('Press enter to start!');
 	nextWord();
 }
