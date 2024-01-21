@@ -14,13 +14,17 @@ Make the Speak and Spell say any letter you type in the input using the `onChang
 
 Load all the `words` and `speech` sounds into the objects `wordSounds` and `speechSounds` in the preload function.
 
-At the start of the game choose a random word from `words` array from the preload function. Have the Speak and Spell say "spell" and then the word.
+In your `start` function have the Speak and Spell say "spell"! Then in the `nextWord` function, choose a random word from `words` array from the preload function. You'll notice that these two sounds will play at the same time. Find out why in Part C.
 
-Let the player spell out the word, when they press enter your program should check if their spelling was correct. If their spelling was correct, use the phrase "that_is_correct_now_spell" and tell them the next word they should spell. HINT: Only have the Speak and Spell say "spell" in the beginning of the game, then have `nextWord` just say the word.
+## Instructions for Part C
+
+In the beginning of the game, the Speak and Spell should say "spell" and then say the word the player should spell. HINT: Use `onended`.
+
+Let the player spell out the word, when they press enter your program should check if their spelling was correct. If their spelling was correct, use the phrase "that_is_correct_now_spell" and tell them the next word they should spell.
 
 If the player spelled the word incorrectly then have the Speak and Spell tell them how to correctly spell the word. Have it spell out the word letter by letter. Here is an example of what it should say: "that is incorrect the correct spelling of worth is w o r t h". HINT: This part is tricky because you can't use a for loop cause the program must wait till each letter sound ends before playing the next letter, you must use a recursion loop.
 
-## Instructions for Part C
+## Instructions for Part D
 
 Change your program to use the "promisified" play function to play sounds using async/await instead of callback chaining. Use a for loop instead of recursion to easily spell out the word.
 

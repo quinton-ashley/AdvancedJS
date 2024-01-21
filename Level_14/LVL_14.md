@@ -118,10 +118,11 @@ To make a play function that we can `await`, we have to wrap it in a Promise.
 
 ## Promises
 
-Back in my day... when I was a young lad first learning JavaScript in 2017, async/await and Promises were not part of JavaScript yet! We had to use callbacks for everything asynchronous... and it was awful. Check out what you'd have to do just to delay some code:
+Back in my day... before 2018, async/await and Promises were not part of JavaScript yet! We had to use callbacks for everything asynchronous... and it was awful. Check out what you'd have to do just to delay some code:
 
 ```js
 console.log('start timer');
+
 setTimeout(() => {
 	console.log('2 seconds passed');
 }, 2000);
@@ -174,7 +175,7 @@ function play(sound) {
 }
 ```
 
-Now we could even use a for loop to play a lot of sounds! No callback chaining needed.
+Now we could even use a for loop to play a lot of sounds! No callback chaining required.
 
 ```js
 async function playAllLetters() {
