@@ -8,9 +8,9 @@ Start thinking of an idea for your own game or interactive art program which I w
 
 Copy and paste your code from Pong into the empty `contain.js` file.
 
-Remove the walls but keep the paddles on the left and right sides of the screen.
+Remove the walls and add paddles to the top and bottom of the screen.
 
-You can move all paddles using the mouse position coordinates (`mouse.x` and `mouse.y`) or with keyboard controls.
+You can move all paddles using the mouse position coordinates (`mouse.x` and `mouse.y`) or with keyboard controls (more challenging).
 
 Make multiple balls on the screen at once! Make an array called `balls`. The goal of this game is for players to contain at least two of the balls.
 
