@@ -6,7 +6,16 @@ let pipes;
 /**
  * @type Group
  */
+let grass;
+
+/**
+ * @type Group
+ */
 let snake;
+
+let eatSound;
+let crashSound;
+let moveSounds = [];
 
 function preload() {
 	eatSound = loadSound('/sounds/retro_collect_pickup_item_20.wav');
@@ -15,17 +24,16 @@ function preload() {
 	crashSound = loadSound('/sounds/retro_crash_damage_01.wav');
 	crashSound.setVolume(0.3);
 
-	moveSounds = [];
-
 	for (let i = 1; i < 10; i++) {
-		sound = loadSound('/sounds/Footstep1__00' + i + '.wav');
+		let sound = loadSound('/sounds/Footstep1__00' + i + '.wav');
 		sound.setVolume(0.3);
 		moveSounds[i] = sound;
 	}
 
-	world.offset.y = 16;
+	world.origin.x = 4;
+	world.origin.y = 20;
 
-	allSprites.tileSize = 8
+	allSprites.tileSize = 8;
 	allSprites.spriteSheet = loadImage('/img/world.png');
 
 	pipes = new Group();
@@ -71,5 +79,5 @@ function setup() {
 }
 
 function draw() {
-	background(2);
+	background('2');
 }
